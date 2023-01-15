@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sorting Algorithms Visualizer - Brandt Davis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div>
+						<ul class="actions">
+							<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+                            <h3><a href="/">Return</a></h3>
+						</ul>
+						<ul class="icons">
+							<li>
+                                <h3><a href="https://www.github.com/Brandt459" target="_blank">GitHub<span class="label icon brands fa-github"></span></a></h3>
+                            </li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>Sorting Algorithms Visualizer</h2>
+								</header>
+								<video controls id="sav-video">
+									<source src="videos/SortingAlgorithmsVisualizer.mp4" type="video/mp4">
+								</video>
+								<h2>Overview</h2>
+								<p>
+									This program shows the processes of heap sort, quick sort, bubble sort, and selection sort.
+									The speed at which the screen updates can be changed by dragging the scale to a lower number for faster speed or a higher number for slower speed.
+									Before running a sorting algorithm, the bars must be shuffled.
+								</p>
+								<h2>Problems Faced</h2>
+								<p>
+									One of the issues I faced when implementing the quick sort algorithm was that sometimes there would be overlapping bars in the same spot.
+									The way a swap is programmed to work visually in the program is that bar A would be deleted from the screen, followed by bar B, and then each bar would be redrawn on the screen in the other bar's previous spot.
+									If a swap were to occur with just one bar, that bar would be deleted twice and then redrawn twice, causing a duplicate.
+									After a close inspection, I realized that sometimes the algorithm would swap a bar with itself, which would cause a duplicate bar.
+									I was able to fix this issue by ensuring that before making a swap, the bars were evaluated to not be the same.
+								</p>
+								<h2>Learning Outcomes</h2>
+								<p>
+									I enjoyed learning about how the various sorting algorithms work and how to implement them into my own program.
+									I also learned about the Python tkinter GUI library and how to update the UI while executing an algorithm at certain intervals.
+								</p>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Phone</h3>
+								<p>(315) 516-2588</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:brandtdavis26@gmail.com">brandtdavis26@gmail.com</a></p>
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
