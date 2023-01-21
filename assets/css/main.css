@@ -4696,3 +4696,7 @@ input, select, textarea {
 #sav-video {
 	margin-bottom: 2rem;
 }
+
+#features {
+	text-align: left;
+}
