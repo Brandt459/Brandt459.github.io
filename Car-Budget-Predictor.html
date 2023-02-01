@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Car Budget Predictor - Brandt Davis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div>
+						<ul class="actions">
+							<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+                            <h3><a href="/">Return</a></h3>
+						</ul>
+						<ul class="icons">
+							<li>
+                                <h3><a href="https://github.com/Brandt459/Car-Budget-Predictor" target="_blank">GitHub<span class="label icon brands fa-github"></span></a></h3>
+                            </li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>Car Budget Predictor</h2>
+								</header>
+								<div class="slideshow-container">
+
+									<!-- Full-width images with number and caption text -->
+									<div class="mySlides fade">
+										<div class="numbertext">1 / 8</div>
+										<img src="images/CarBudgetPredictor/readdata.png" style="width:100%">
+										<div class="text">Reading the data</div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">2 / 8</div>
+										<img src="images/CarBudgetPredictor/removerows.png" style="width:100%">
+										<div class="text">Removing rows with null data</div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">3 / 8</div>
+										<img src="images/CarBudgetPredictor/salarycorrelation.png" style="width:100%">
+										<div class="text">Correlation between customer's annual salary and car budget</div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">4 / 8</div>
+										<img src="images/CarBudgetPredictor/gendercorrelation.png" style="width:100%">
+										<div class="text">Average car budget by gender</div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">5 / 8</div>
+										<img src="images/CarBudgetPredictor/headmap.png" style="width:100%">
+										<div class="text">Heat map showing the correlations between multiple variables</div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">6 / 8</div>
+										<img src="images/CarBudgetPredictor/linearregressionmodeling.png" style="width:100%">
+										<div class="text">Developing the linear regression model</div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">7 / 8</div>
+										<img src="images/CarBudgetPredictor/modelaccuracy.png" style="width:100%">
+										<div class="text">Linear regression model accuracy</div>
+									</div>
+
+									<div class="mySlides fade">
+										<div class="numbertext">8 / 8</div>
+										<img src="images/CarBudgetPredictor/usingthemodel.png" style="width:100%">
+										<div class="text">Using the linear regression model</div>
+									</div>
+								
+									<!-- Next and previous buttons -->
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								</div>
+								<br>
+								
+								<!-- The dots/circles -->
+								<div style="text-align:center">
+									<span class="dot" onclick="currentSlide(1)"></span>
+									<span class="dot" onclick="currentSlide(2)"></span>
+									<span class="dot" onclick="currentSlide(3)"></span>
+									<span class="dot" onclick="currentSlide(4)"></span>
+									<span class="dot" onclick="currentSlide(5)"></span>
+									<span class="dot" onclick="currentSlide(6)"></span>
+									<span class="dot" onclick="currentSlide(7)"></span>
+									<span class="dot" onclick="currentSlide(8)"></span>
+								</div>
+								<h2>Problem Statement</h2>
+								<p> 
+									Understanding a customer's budget is a major challenge in the car sales industry. 
+									This is because customers have different budgets and financial situations, which can make it difficult to know which cars they can afford. 
+									This lack of understanding can lead to wasted time and resources on the part of the salesperson, as they may try to sell cars that are outside of the customer's budget. 
+									This can result in an inefficient and ineffective sales process, leading to a negative customer experience and lower sales numbers. 
+								</p>
+								<h2>Solution</h2>
+								<p> 
+									To address this challenge, I developed a machine learning model that accurately predicts a customer's budget based on various characteristics. 
+									This model uses linear regression and considers factors such as age, annual salary, and net worth to determine a customer's budget with a high degree of accuracy. 
+									The model was trained on a dataset of car budgets from Kaggle and achieved an accuracy of nearly 100%. 
+									This means that sales efforts can be streamlined and focused on cars that are within the customer's budget, leading to a more efficient and effective sales process. 
+								</p>
+								<h2>Methodology</h2>
+								<p> 
+									The methodology used to develop this machine learning solution involved several key steps. 
+									First, I conducted a thorough data analysis of the car budget dataset from Kaggle to determine which customer characteristics had the strongest impact on their budget. 
+									I found that age, annual salary, and net worth were the most important factors, and used these variables as inputs for the linear regression model. 
+									Next, I split the data into a training set (80%) and a testing set (20%) and used the training set to train the model. 
+									The model was then tested against the remaining data to evaluate its accuracy. 
+									The model performed exceptionally well, achieving near 100% accuracy when tested against the testing set. 
+								</p>
+								<h2>Outcome</h2>
+								<p> 
+									The outcome of this machine learning solution is a more efficient and effective sales process for the car sales industry. 
+									By providing a high degree of accuracy in predicting a customer's budget, sales efforts can be focused on cars that are within the customer's budget, leading to a better customer experience and higher sales numbers. 
+									The solution has the potential to revolutionize the way car sales are done, streamlining the process and leading to a more successful and profitable business. 
+								</p>
+								<p>
+									To view the GitHub repository, click here: <a href="https://github.com/Brandt459/Car-Budget-Predictor" target="_blank" style="color: blue;">https://github.com/Brandt459/Car-Budget-Predictor</a>
+								</p>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Phone</h3>
+								<p>(315) 516-2588</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:brandtdavis26@gmail.com">brandtdavis26@gmail.com</a></p>
+							</section>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/slideshow.js"></script>
+
+	</body>
+</html>
