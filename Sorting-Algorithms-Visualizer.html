@@ -44,22 +44,26 @@
 								</video>
 								<h2>Overview</h2>
 								<p>
-									This program shows the processes of heap sort, quick sort, bubble sort, and selection sort.
-									The speed at which the screen updates can be changed by dragging the scale to a lower number for faster speed or a higher number for slower speed.
-									Before running a sorting algorithm, the bars must be shuffled.
+									This program showcases the functionality of four sorting algorithms: heap sort, quick sort, bubble sort, and selection sort. 
+									Users can control the animation speed of the sorting process by adjusting the speed slider. 
+									Before starting the sorting, the user can shuffle the bars to observe different sorting results.
 								</p>
 								<h2>Problems Faced</h2>
 								<p>
-									One of the issues I faced when implementing the quick sort algorithm was that sometimes there would be overlapping bars in the same spot.
-									The way a swap is programmed to work visually in the program is that bar A would be deleted from the screen, followed by bar B, and then each bar would be redrawn on the screen in the other bar's previous spot.
-									If a swap were to occur with just one bar, that bar would be deleted twice and then redrawn twice, causing a duplicate.
-									After a close inspection, I realized that sometimes the algorithm would swap a bar with itself, which would cause a duplicate bar.
-									I was able to fix this issue by ensuring that before making a swap, the bars were evaluated to not be the same.
+									When implementing the quick sort algorithm, I faced a challenge with overlapping bars in the program's visualization. 
+									The issue arose due to the way the program was designed to handle bar swaps visually. 
+									The program was designed to delete bar A from the screen, followed by bar B, and then redraw each bar in the other bar's previous spot. 
+									If a swap occurred with just one bar, that bar would be deleted twice and then redrawn twice, causing a duplicate on the screen.
+								</p>
+								<p>
+									After a thorough inspection, I realized that the problem was sometimes the algorithm was swapping a bar with itself, which would result in a duplicate bar. 
+									To resolve this issue, I added a check to the program to ensure that before making a swap, the bars being swapped were evaluated to not be the same. 
+									This simple addition significantly improved the visual representation of the quick sort algorithm and eliminated any overlapping bar issues.
 								</p>
 								<h2>Learning Outcomes</h2>
 								<p>
-									I enjoyed learning about how the various sorting algorithms work and how to implement them into my own program.
-									I also learned about the Python tkinter GUI library and how to update the UI while executing an algorithm at certain intervals.
+									I gained a deeper understanding of different sorting algorithms and the process of implementing them in a program. 
+									Additionally, I learned how to use the Python tkinter GUI library and update the user interface while executing algorithms.
 								</p>
 								<p>
 									To view the GitHub repository, click here: <a href="https://github.com/Brandt459/SortingAlgorithmsVisualizer" target="_blank" style="color: blue;">https://github.com/Brandt459/SortingAlgorithmsVisualizer</a>
